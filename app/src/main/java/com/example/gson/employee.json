@@ -1,9 +1,1 @@
-{
-  "address": {
-    "city": "New Delhi",
-    "country": "India"
-  },
-  "age": 20,
-  "firstName": "HOY",
-  "mail": "abc@gmail.com"
-}
+{"address":{"city":"New Delhi","country":"India"},"family":[{"age":20,"role":"Friend"},{"age":0,"role":"Teacher"},{"age":2,"role":"Pet"}],"age":21,"firstName":"HOY","mail":"abc@gmail.com"}

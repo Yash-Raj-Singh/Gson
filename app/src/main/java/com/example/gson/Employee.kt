@@ -16,12 +16,16 @@ class Employee {
     @SerializedName("address")
     private var mAddress: Address
 
-    constructor(  firstName: String,  age: Int, mail: String, address: Address)
+    @SerializedName("family")
+    private var mFamily: List<FamilyMembers>
+
+    constructor(  firstName: String,  age: Int, mail: String, address: Address, family:List<FamilyMembers> )
     {
         mfirstName = firstName
         mage = age
         mmail = mail
         mAddress = address
+        mFamily = family
     }
 
 }
