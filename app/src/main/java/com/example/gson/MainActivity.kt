@@ -11,12 +11,18 @@ class MainActivity : AppCompatActivity() {
 
         val gson: Gson = Gson()
 
-        /*var json: String = gson.toJson(Employee("HOY", 20, "abc@gmail.com"))
+        /*val address: Address = Address("India", "New Delhi")
+
+        var json: String = gson.toJson(Employee("HOY", 20, "abc@gmail.com", address))
         */
 
-        val json: String = "{\"age\":20,\"firstName\":\"HOY\",\"mail\":\"abc@gmail.com\"}"
+
+        val json: String = "{\"address\":{\"city\":\"New Delhi\",\"country\":\"India\"},\"age\":20,\"firstName\":\"HOY\",\"mail\":\"abc@gmail.com\"}"
 
         val employee: Employee = gson.fromJson(json, Employee::class.java)
+
+
+
 
     }
 }

@@ -13,11 +13,15 @@ class Employee {
     @SerializedName("mail")
     private var mmail:String? = null
 
-    constructor(  firstName: String,  age: Int, mail: String)
+    @SerializedName("address")
+    private var mAddress: Address
+
+    constructor(  firstName: String,  age: Int, mail: String, address: Address)
     {
         mfirstName = firstName
         mage = age
         mmail = mail
+        mAddress = address
     }
 
 }
